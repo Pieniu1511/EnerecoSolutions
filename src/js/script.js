@@ -2,8 +2,10 @@ const burgerBtn = document.querySelector('.burger-icon');
 const hiddenMenu = document.querySelector('.hidden-menu');
 const closeBtn = document.querySelector('.close-menu');
 const cards = document.querySelectorAll('.card');
-let heroLeftButton = document.querySelector('.hero-btn-left');
-let heroRightButton = document.querySelector('.hero-btn-right');
+const heroBottom = document.querySelector('.hero-bottom');
+const heroText = heroBottom.querySelector('p');
+const leftButton = document.querySelector('.hero-btn-left');
+const rightButton = document.querySelector('.hero-btn-right');
 
 cards.forEach(card => {
 	const btn = card.querySelector('.plus-btn');
@@ -14,7 +16,9 @@ cards.forEach(card => {
 	});
 });
 
-let images = ['../dist/img/5.jpg', '../dist/img/2.jpg', '../dist/img/heat_pomp.jpeg', '../dist/img/energy.jpg'];
+let currentIndex = 0;
+
+const classes = ['first-img', 'second-img', 'third-img', 'fourth-img'];
 
 let texts = [
 	'Ekologiczne rozwiązania dla przyszłych pokoleń',
@@ -22,9 +26,6 @@ let texts = [
 	'Oszczędzaj pieniądze i środowisko dzięki odnawialnej energii',
 	'Tańsza energia dla Twojego domu i firmy',
 ];
-
-let currentImage = 0;
-let currentText = 0;
 
 const showMenu = () => {
 	hiddenMenu.style.transform = 'translateX(0)';
@@ -34,35 +35,51 @@ const closeMenu = () => {
 	hiddenMenu.style.transform = 'translateX(100%)';
 };
 
-function updateHero() {
-	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
-
-	let rightParagraph = bottomDiv.querySelector('p');
-	rightParagraph.textContent = texts[currentText];
+function updateImage() {
+	currentIndex = (currentIndex + 1) % classes.length;
+	if (currentIndex === 0) {
+		heroBottom.classList.replace(classes[classes.length - 1], classes[currentIndex]);
+	} else {
+		heroBottom.classList.replace(classes[currentIndex - 1], classes[currentIndex]);
+	}
+	heroText.textContent = texts[currentIndex];
 }
 
-setInterval(function () {
-	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
+setInterval(updateImage, 10000);
 
-	let rightParagraph = bottomDiv.querySelector('p');
-	rightParagraph.textContent = texts[currentText];
+// function updateHero() {
+// 	let bottomDiv = document.querySelector('.hero-bottom');
+// 	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
 
-	currentImage = (currentImage + 1) % images.length;
-	currentText = (currentText + 1) % texts.length;
-}, 10000);
+// 	let rightParagraph = bottomDiv.querySelector('p');
+// 	rightParagraph.textContent = texts[currentText];
+// }
+
+// setInterval(function () {
+// 	let bottomDiv = document.querySelector('.hero-bottom');
+// 	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
+//     bottomDiv.classList.add
+
+// 	let rightParagraph = bottomDiv.querySelector('p');
+// 	rightParagraph.textContent = texts[currentText];
+
+// 	currentImage = (currentImage + 1) % images.length;
+// 	currentText = (currentText + 1) % texts.length;
+// }, 10000);
 
 burgerBtn.addEventListener('click', showMenu);
 closeBtn.addEventListener('click', closeMenu);
-heroLeftButton.addEventListener('click', function () {
-	currentImage = (currentImage - 1 + images.length) % images.length;
-	currentText = (currentText - 1 + texts.length) % texts.length;
-	updateHero();
+leftButton.addEventListener('click', function () {
+	currentIndex = (currentIndex - 1 + classes.length) % classes.length;
+	heroBottom.classList.replace(classes[currentIndex + 1], classes[currentIndex]);
+	heroText.textContent = texts[currentIndex];
 });
-
-heroRightButton.addEventListener('click', function () {
-	currentImage = (currentImage + 1) % images.length;
-	currentText = (currentText + 1) % texts.length;
-	updateHero();
+rightButton.addEventListener('click', function () {
+	currentIndex = (currentIndex + 1) % classes.length;
+	if (currentIndex === 0) {
+		heroBottom.classList.replace(classes[classes.length - 1], classes[currentIndex]);
+	} else {
+		heroBottom.classList.replace(classes[currentIndex - 1], classes[currentIndex]);
+	}
+	heroText.textContent = texts[currentIndex];
 });
