@@ -14,12 +14,7 @@ cards.forEach(card => {
 	});
 });
 
-let images = [
-	'../../dist/img/5.jpg',
-	'../../dist/img/2.jpg',
-	'../../dist/img/heat_pomp.jpeg',
-	'../../dist/img/energy.jpg',
-];
+let images = ['../img/5.jpg', '../img/2.jpg', '../img/heat_pomp.jpeg', '../img/energy.jpg'];
 
 let texts = [
 	'Ekologiczne rozwiązania dla przyszłych pokoleń',
