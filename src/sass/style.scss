@@ -340,15 +340,6 @@ header {
 	width: 100vw;
 	position: relative;
 
-	.logo-bg {
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: -2;
-	}
-
 	.products-cards {
         display: flex;
         flex-direction: column;
@@ -553,6 +544,16 @@ header {
 	.nav-desktop {
 		display: flex;
 	}
+
+    .products {
+        .products-cards {
+            .product-card {
+                font-size: 1.6rem;
+                height: 60rem;
+                width: 30rem;
+            }
+        }
+    }
 }
 
 // ANIMACJE
