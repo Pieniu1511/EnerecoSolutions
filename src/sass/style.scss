@@ -252,6 +252,7 @@ header {
 			border-radius: 1rem;
 			background-color: rgba(0, 0, 0, 0.6);
 			color: #fff;
+            cursor: pointer;
 			opacity: 0;
 			font-size: 3rem;
 			padding: 1rem;
@@ -316,6 +317,7 @@ header {
 				.plus-btn {
 					background-color: transparent;
 					border: none;
+                    cursor: pointer;
 					padding: 1rem;
 				}
 			}
@@ -525,6 +527,12 @@ header {
 			}
 		}
 	}
+
+    .products {
+        .products-cards {
+            flex-direction: row;
+        }
+    }
 }
 
 @media (min-width: 1200px) {
