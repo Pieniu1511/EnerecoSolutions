@@ -36,7 +36,7 @@ const closeMenu = () => {
 
 function updateHero() {
 	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
+	bottomDiv.style.backgroundImage = `url('${images[currentImage]}')`;
 
 	let rightParagraph = bottomDiv.querySelector('p');
 	rightParagraph.textContent = texts[currentText];
@@ -44,7 +44,7 @@ function updateHero() {
 
 setInterval(function () {
 	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
+	bottomDiv.style.backgroundImage = `url('${images[currentImage]}')`;
 
 	let rightParagraph = bottomDiv.querySelector('p');
 	rightParagraph.textContent = texts[currentText];
