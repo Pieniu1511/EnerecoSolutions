@@ -18,7 +18,7 @@ let images = ['../../dist/img/5.jpg', '../../dist/img/2.jpg', '../../dist/img/he
 
 let texts = [
 	'Ekologiczne rozwiązania dla przyszłych pokoleń',
-	'Powiedz goodbye rachunkom za energię z naszymi panelami słonecznymi',
+	'Powiedz GOODBYE rachunkom za energię z naszymi panelami słonecznymi',
 	'Oszczędzaj pieniądze i środowisko dzięki odnawialnej energii',
 	'Tańsza energia dla Twojego domu i firmy',
 ];
@@ -36,7 +36,7 @@ const closeMenu = () => {
 
 function updateHero() {
 	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url('${images[currentImage]}')`;
+	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
 
 	let rightParagraph = bottomDiv.querySelector('p');
 	rightParagraph.textContent = texts[currentText];
@@ -44,7 +44,7 @@ function updateHero() {
 
 setInterval(function () {
 	let bottomDiv = document.querySelector('.hero-bottom');
-	bottomDiv.style.backgroundImage = `url('${images[currentImage]}')`;
+	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
 
 	let rightParagraph = bottomDiv.querySelector('p');
 	rightParagraph.textContent = texts[currentText];

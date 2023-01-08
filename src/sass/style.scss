@@ -345,20 +345,19 @@ header {
         flex-direction: column;
 
 		.product-card {
-            font-size: 1.4rem;
-			height: 52rem;
+            background-color: rgba(140, 198, 62, 0.3);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
 			margin: 2rem;
-			perspective: 80rem;
 			position: relative;
-			width: 25rem;
+			width: 30rem;
 
 			&__img {
-				height: 100%;
-				width: 100%;
-				background-position: center;
+                background-position: center;
 				background-size: cover;
-				border-radius: 1.5rem;
-				transition: 0.8s;
+				height: 30rem;
+                width: 100%;
 			}
 
 			&__title {
@@ -370,31 +369,15 @@ header {
 				position: absolute;
 				text-align: center;
                 text-transform: uppercase;
-				top: 50%;
+				top: 15rem;
 				transform: translateY(-50%);
 				transition: 0.5s;
 				width: 100%;
 			}
 
 			&__text {
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
+                text-align: center;
 				padding: 3rem;
-				border-radius: 1.5rem;
-				text-align: center;
-				background: rgb(140, 198, 62);
-				background: linear-gradient(
-					0deg,
-					rgba(140, 198, 62, 1) 0%,
-					rgba(210, 255, 150, 1) 44%,
-					rgba(255, 255, 255, 1) 82%
-				);
-				opacity: 0;
-				transition: 0.8s;
-				transform: rotateX(-180deg);
 			}
             
             .one {
@@ -408,34 +391,6 @@ header {
             .three {
                 background-image: url('../img/energia-karta.jpg');
             }
-
-			&:hover .product-card__text {
-				opacity: 1;
-				transform: rotateX(0);
-			}
-
-			&:hover .one {
-				opacity: 0;
-				transform: rotateX(180deg);
-			}
-
-			&:hover .two {
-				opacity: 0;
-				transform: rotateX(180deg);
-			}
-
-			&:hover .three {
-				opacity: 0;
-				transform: rotateX(180deg);
-			}
-            
-            
-
-			&:hover .product-card__title {
-				opacity: 0;
-				transform: rotateX(180deg);
-			}
-
 		}
 	}
 }
@@ -544,16 +499,6 @@ header {
 	.nav-desktop {
 		display: flex;
 	}
-
-    .products {
-        .products-cards {
-            .product-card {
-                font-size: 1.6rem;
-                height: 60rem;
-                width: 30rem;
-            }
-        }
-    }
 }
 
 // ANIMACJE
