@@ -343,10 +343,12 @@ header {
         height: 30rem;
         width: 100vw;
         position: relative;
-
+        
         video {
+            height: 100%;
+            object-fit: cover;
             position: absolute;
-            top: -70%;
+            top: 0;
             width: 100%;
         }
     }
