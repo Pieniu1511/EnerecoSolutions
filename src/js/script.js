@@ -47,26 +47,6 @@ function updateImage() {
 
 setInterval(updateImage, 10000);
 
-// function updateHero() {
-// 	let bottomDiv = document.querySelector('.hero-bottom');
-// 	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
-
-// 	let rightParagraph = bottomDiv.querySelector('p');
-// 	rightParagraph.textContent = texts[currentText];
-// }
-
-// setInterval(function () {
-// 	let bottomDiv = document.querySelector('.hero-bottom');
-// 	bottomDiv.style.backgroundImage = `url(${images[currentImage]})`;
-//     bottomDiv.classList.add
-
-// 	let rightParagraph = bottomDiv.querySelector('p');
-// 	rightParagraph.textContent = texts[currentText];
-
-// 	currentImage = (currentImage + 1) % images.length;
-// 	currentText = (currentText + 1) % texts.length;
-// }, 10000);
-
 burgerBtn.addEventListener('click', showMenu);
 closeBtn.addEventListener('click', closeMenu);
 leftButton.addEventListener('click', function () {
