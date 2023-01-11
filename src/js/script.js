@@ -27,6 +27,7 @@ const showMenu = () => {
 
 const closeMenu = () => {
 	hiddenMenu.style.transform = 'translateX(100%)';
+    offerOptions.classList.remove('show-options')
 };
 
 burgerBtn.addEventListener('click', showMenu);

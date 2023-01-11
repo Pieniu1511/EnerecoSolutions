@@ -327,6 +327,17 @@ header {
 			top: 2rem;
 			z-index: 10;
 		}
+        
+        p{
+            color: #fff;
+            font-size: 1.7rem;
+            left: 1rem;
+            padding: 1rem;
+            position: absolute;
+            text-shadow: 0.2rem 0.1rem rgba(0, 0, 0, 1);
+            top: 20rem;
+            z-index: 10;
+        }
 
 		video {
 			height: 100%;
@@ -335,6 +346,24 @@ header {
 			top: 0;
 			width: 100%;
 		}
+
+        .hero-btn {
+            background-color: #8cc63e;
+            border: none;
+            bottom: 4rem;
+            color: #fff;
+            cursor: pointer;
+            font-size: 2rem;
+            padding: 1rem 2rem;
+            position: absolute;
+            right: 8rem;
+            transition: background-color .3s, color .3s;
+
+            &:hover {
+                background-color: #fff;
+                color: #8cc63e;
+            }
+        }
 	}
 }
 
@@ -475,11 +504,14 @@ header {
 
 	.hero {
 		.hero-video {
-			// height: 400rem;
 
 			h1 {
 				font-size: 3rem;
 			}
+
+            p {
+                font-size: 1.9rem;
+            }
 		}
 	}
 }
@@ -527,7 +559,6 @@ header {
 
 	.hero {
 		.hero-video {
-			// height: 45rem;
 
 			h1 {
 				font-size: 3.5rem;
@@ -557,6 +588,20 @@ header {
 			flex-direction: row;
 		}
 	}
+
+    .hero {
+        .hero-video {
+            h1 {
+                left: 40%;
+                transform: translateX(-50%);
+            }
+
+            .hero-btn {
+                right: 30%;
+                transform: translateX(-50%);
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
