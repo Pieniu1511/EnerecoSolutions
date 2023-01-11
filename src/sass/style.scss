@@ -210,10 +210,11 @@ header {
 					background-color: #8cc63e;
 					height: 120%;
 					left: 0;
+                    opacity: 0;
 					position: absolute;
 					top: 0;
 					transform: translateY(100%);
-					transition: transform 0.3s;
+					transition: transform .4s, opacity .4s;
 					width: 100%;
 					z-index: -1;
 				}
@@ -224,6 +225,7 @@ header {
 
 				&:hover::before {
 					transform: translateY(0);
+                    opacity: 1;
 				}
 			}
 		}
@@ -558,6 +560,90 @@ header {
 			}
 		}
 	}
+}
+
+.pv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    .about-pv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        .about-pv__left {
+            width: 100%;
+    
+            .about-pv-logo {
+                text-align: center;
+                width: 100%;
+
+                img {
+                    width: 20rem;
+                }
+            }
+            
+            .about-pv-text {
+                margin-bottom: 1rem;
+                padding: 2rem;
+            }
+
+            p {
+                padding: 2rem;
+
+                i {
+                    color: #7d248f;
+                }
+            }
+        }
+
+        .about-pv-right {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .pv-tile {
+                align-items: center;
+                border-radius: 2rem;
+                display: flex;
+                flex-direction: column;
+                height: 12rem;
+                margin: 0.5rem;
+                padding: 1rem;
+                width: 80%;
+
+                &-icon {
+                    font-size: 2.5rem;
+                }
+
+                &-number {
+                    font-weight: bold;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                &-text {
+                    text-align: center;
+                    font-size: 1.4rem;
+                }
+            }
+
+            .pv-green {
+                background-color: #8cc63e;
+            }
+
+            .pv-pink {
+                background-color: #000;
+                color: #fff;
+            }
+
+
+
+        }
+        
+    }
 }
 
 // MEDIA
