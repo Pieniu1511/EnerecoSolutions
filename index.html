@@ -64,6 +64,12 @@
     </div>
 </nav>
     <main>
+        <div class="loading-site">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <img src="../dist/img/LogoEnereko2 (1)-1.png" alt="Logo firmy Enereko Solutions">
+        </div>
         <section class="hero">
             <div class="hero-top">
                 <p>Inwestujemy w czyste źródła energii</p>
@@ -79,28 +85,40 @@
                         <div class="hero-video__tile">
                             <div class="tile-icon"><img src="dist/img/solar-panel.png"
                                     alt="Ikona z panelem fotowoltaicznym"></div>
-                            <div class="tile-hide"><div> Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div></div>
+                            <div class="tile-hide">
+                                <div> Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+                                        title="Smashicons"> Smashicons </a> from <a href="https://www.flaticon.com/"
+                                        title="Flaticon">www.flaticon.com'</a></div>
+                            </div>
                             <div class="tile-text">Instalacje fotowoltaiczne</div>
                             <a href="installations.html" class="tile-more-info">Czytaj więcej...</a>
                         </div>
                         <div class="hero-video__tile">
-                            <div class="tile-icon"><img src="dist/img/heat.png"
-                                    alt="Ikona z pompą ciepła"></div>
-                            <div class="tile-hide"> Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan"> Darius Dan </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+                            <div class="tile-icon"><img src="dist/img/heat.png" alt="Ikona z pompą ciepła"></div>
+                            <div class="tile-hide"> Icons made by <a href="https://www.flaticon.com/authors/darius-dan"
+                                    title="Darius Dan"> Darius Dan </a> from <a href="https://www.flaticon.com/"
+                                    title="Flaticon">www.flaticon.com'</a></div>
                             <div class="tile-text">Pompy ciepła</div>
                             <a href="heatpumps.html" class="tile-more-info">Czytaj więcej...</a>
                         </div>
                         <div class="hero-video__tile">
-                            <div class="tile-icon"><img src="dist/img/lighting.png"
-                                    alt="Ikona z piorunem"></div>
-                            <div class="tile-hide"><div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div></div>
+                            <div class="tile-icon"><img src="dist/img/lighting.png" alt="Ikona z piorunem"></div>
+                            <div class="tile-hide">
+                                <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from
+                                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>
+                                </div>
+                            </div>
                             <div class="tile-text">Tania energia</div>
                             <a href="cheapenergy.html" class="tile-more-info">Czytaj więcej...</a>
                         </div>
                         <div class="hero-video__tile">
                             <div class="tile-icon"><img src="dist/img/save-money.png"
                                     alt="Ikona z pieniążkiem wpadającym do dłoni"></div>
-                            <div class="tile-hide"><div> Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry"> Kiranshastry </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div></div>
+                            <div class="tile-hide">
+                                <div> Icons made by <a href="https://www.flaticon.com/authors/kiranshastry"
+                                        title="Kiranshastry"> Kiranshastry </a> from <a href="https://www.flaticon.com/"
+                                        title="Flaticon">www.flaticon.com'</a></div>
+                            </div>
                             <div class="tile-text">Dotacje</div>
                             <a href="grants.html" class="tile-more-info">Czytaj więcej...</a>
                         </div>
@@ -283,6 +301,23 @@
     </div>
 </footer>
 
+    <script>
+        const progress = document.querySelector('.progress')
+        progress.style.width = "0%";
+        let width = 0;
+        const intervalId = setInterval(frame, 30);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(intervalId);
+            } else {
+                width++;
+                progress.style.width = width + '%';
+            }
+        }
+        setTimeout(function () {
+            document.querySelector(".loading-site").style.display = "none";
+        }, 3000);
+    </script>
     <script src="dist/js/script.min.js"></script>
 </body>
 

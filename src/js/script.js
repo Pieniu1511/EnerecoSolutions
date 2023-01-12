@@ -7,7 +7,6 @@ const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 
-
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
 dropdownMenu.innerHTML =
