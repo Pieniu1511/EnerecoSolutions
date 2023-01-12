@@ -680,6 +680,7 @@ header {
 		margin-bottom: 3rem;
 		margin-top: 5rem;
 		padding: 2rem;
+        text-align: center;
 
 		span {
 			color: #8cc63e;
@@ -775,6 +776,80 @@ header {
 			}
 		}
 	}
+
+    .pv-place {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        &-title {
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            height: 25rem;
+            justify-content: center;
+            position: relative;
+            width: 90%;
+            z-index: -1;
+
+            &-shadow {
+                background-color: rgba(0, 0, 0, 0.6);
+                height: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                width: 100%;
+                z-index: 0;
+            }
+
+            &-text {
+                font-size: 4rem;
+                text-align: center;
+                text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
+                text-transform: uppercase;
+                z-index: 1;
+
+                i {
+                    color: #8cc63e;
+                }
+            }
+        }
+
+        &-text {
+            width: 85%;
+            padding: 2rem;
+
+            div {
+                margin-bottom: 2rem;
+            }
+
+            span {
+                color: #7d248f;
+                font-weight: bold;
+            }
+
+            i {
+                color: #7d248f;
+            }
+        }
+
+        .pv-home {
+            background-image: url('../img/pv-place-home.jpg');
+        }
+
+        .pv-company {
+            background-image: url('../img/pv-place-company.jpg');
+        }
+
+        .pv-agro {
+            background-image: url('../img/pv-place-agro.jpg');
+        }
+
+    }
 }
 
 // MEDIA
