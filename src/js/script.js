@@ -7,12 +7,12 @@ const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 
+
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
 dropdownMenu.innerHTML =
 	'<a href="installations.html">Instalacje fotowoltaiczne</a><a href="heatpumps.html">Pompy ciepła</a><a href="cheapenergy.html">Tania energia</a><a href="grants.html">Dotacje</a>';
 dropdown.appendChild(dropdownMenu);
-
 
 cards.forEach(card => {
 	const btn = card.querySelector('.plus-btn');
@@ -31,7 +31,7 @@ const showMenu = () => {
 const closeMenu = () => {
 	hiddenMenu.style.transform = 'translateX(100%)';
 	offerOptions.classList.remove('show-options');
-    body.style.overflow = 'auto';
+	body.style.overflow = 'auto';
 };
 
 burgerBtn.addEventListener('click', showMenu);
