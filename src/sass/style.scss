@@ -848,7 +848,42 @@ header {
         .pv-agro {
             background-image: url('../img/pv-place-agro.jpg');
         }
+    }
+}
 
+.partners {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    .partners-main {
+        width: 100%;
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+
+            span {
+                color: #8cc63e;
+                font-size: 4rem;
+            }
+        }
+
+        .partners-logos {
+            align-items: center;
+            display: flex;
+            height: 15rem;
+            justify-content: center;
+            width: 100%;
+
+            .partners-logo {
+                margin: 3rem 0;
+                width: 50%;
+            }
+        }
     }
 }
 
@@ -1011,6 +1046,23 @@ header {
 			}
 		}
 	}
+
+    .partners {
+        .partners-main {
+
+            .partners-logos {
+                height: 35rem;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 2rem;
+
+                .partners-logo {
+                    width: 10rem;
+                    margin: 2rem 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -1097,6 +1149,28 @@ header {
 			}
 		}
 	}
+
+    .partners {
+        .partners-main {
+            h2 {
+                font-size: 4rem;
+
+                span {
+                    font-size: 6rem;
+                }
+            }
+
+            .partners-logos {
+                height: 35rem;
+                padding: 3rem;
+
+                .partners-logo {
+                    width: 15rem;
+                    margin: 2rem 1rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1127,6 +1201,24 @@ header {
 			}
 		}
 	}
+
+    .partners {
+        .partners-main {
+            h2 {
+                font-size: 5rem;
+
+                span {
+                    font-size: 7rem;
+                }
+            }
+
+            .partners-logos {
+                .partners-logo {
+                    width: 20rem;
+                }
+            }
+        }
+    }
 }
 
 // ANIMACJE

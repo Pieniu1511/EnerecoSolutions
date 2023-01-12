@@ -6,6 +6,24 @@ const dropdown = document.querySelector('.nav-item--dropdown');
 const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
+const images = document.querySelectorAll('.partners-logo');
+let i = 0;
+
+function checkWidth() {
+	if (window.innerWidth < 768) {
+		setInterval(function () {
+			images.forEach(img => (img.style.display = 'none'));
+			images[i].style.display = 'block';
+			i++;
+			if (i === images.length) {
+				i = 0;
+			}
+		}, 3000);
+	}
+}
+
+checkWidth();
+window.onresize = checkWidth;
 
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
