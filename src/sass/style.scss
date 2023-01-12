@@ -717,6 +717,32 @@ header {
             background-image: url('../img/pv-fourth-step.jpg');
         }
     }
+
+    .pv-icons {
+        margin-top: 5rem;
+
+        .pv-icon {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 5rem;
+            text-align: center;
+
+            .pv-icon-img {
+                font-size: 5rem;
+            }
+
+            .pv-icon-title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .pv-icon-text {
+                font-size: 1.4rem;
+            }
+        }
+    }
 }
 
 // MEDIA
@@ -855,6 +881,28 @@ header {
                 margin-right: 1rem;
             }
         }
+
+        .pv-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 1rem;;
+            width: 100%;
+            
+            .pv-icon {
+                .pv-icon-img {
+                    font-size: 4rem;
+                }
+
+                .pv-icon-title {
+                    font-size: 1.5rem;
+                }
+
+                .pv-icon-text {
+                    font-size: 1.1rem;
+                }
+            }
+        }
 	}
 }
 
@@ -919,6 +967,22 @@ header {
 				}
 			}
 		}
+
+        .pv-icons {
+            .pv-icon {
+                .pv-icon-img {
+                    font-size: 5rem;
+                }
+
+                .pv-icon-title {
+                    font-size: 2rem;
+                }
+
+                .pv-icon-text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
 	}
 }
 
