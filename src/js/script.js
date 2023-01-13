@@ -6,16 +6,13 @@ const dropdown = document.querySelector('.nav-item--dropdown');
 const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
-const images = document.querySelectorAll('.partners-logo');
-const partnersLogos = document.querySelector('.partners-logos');
-const logos = document.querySelectorAll('.partners-logo');
+const logos = document.querySelectorAll('.logo');
 
 let count = 0;
+console.log(logos);
 
 let currentLogo = 0;
-
 logos[currentLogo].classList.add('active');
-
 setInterval(() => {
 	logos[currentLogo].classList.remove('active');
 	currentLogo = (currentLogo + 1) % logos.length;

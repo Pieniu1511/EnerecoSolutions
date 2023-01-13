@@ -872,7 +872,7 @@ header {
 			}
 		}
 
-		.partners-logos {
+		.logos {
             align-items: center;
 			display: flex;
 			flex-direction: column;
@@ -880,13 +880,13 @@ header {
 			justify-content: center;
 			width: 100%;
 
-			.partners-logo {
+			.logo {
                 display: none;
                 margin: 3rem 0;
                 width: 50%;
             }
 
-            .partners-logo.active {
+            .logo.active {
                 display: block;
             }
 		}
@@ -1055,7 +1055,7 @@ header {
 
 	.partners {
 		.partners-main {
-			.partners-logos {
+			.logos {
                 align-items: center;
                 display: flex;
                 height: 15rem;
@@ -1063,7 +1063,7 @@ header {
 				padding: 2rem;
 				position: relative;
 
-				.partners-logo {
+				.logo {
 					animation: slideShow 30s linear infinite;
                     display: block;
 					left: 0;
@@ -1207,10 +1207,10 @@ header {
 				}
 			}
 
-			.partners-logos {
+			.logos {
 				padding: 3rem;
 
-				.partners-logo {
+				.logo {
 					// width: 15rem;
 					margin: 2rem 1rem;
 				}
