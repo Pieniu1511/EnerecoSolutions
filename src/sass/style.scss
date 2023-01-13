@@ -18,6 +18,20 @@ body {
 	max-width: 1200px;
 }
 
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-top: 5rem;
+	padding: 2rem;
+	text-align: center;
+
+	span {
+		color: #8cc63e;
+		font-size: 4rem;
+		margin: 0rem 1rem;
+	}
+}
+
 //  NAWIGACJA
 header {
 	margin: 1rem;
@@ -675,20 +689,6 @@ header {
 		}
 	}
 
-	.pv-section-title {
-		font-size: 2rem;
-		margin-bottom: 3rem;
-		margin-top: 5rem;
-		padding: 2rem;
-		text-align: center;
-
-		span {
-			color: #8cc63e;
-			font-size: 4rem;
-			margin: 0rem 1rem;
-		}
-	}
-
 	.pv-steps {
 		padding: 1rem;
 		margin-top: 2rem;
@@ -873,7 +873,7 @@ header {
 		}
 
 		.logos {
-            align-items: center;
+			align-items: center;
 			display: flex;
 			flex-direction: column;
 			height: 15rem;
@@ -881,51 +881,138 @@ header {
 			width: 100%;
 
 			.logo {
-                display: none;
-                margin: 3rem 0;
-                width: 50%;
-            }
+				display: none;
+				margin: 3rem 0;
+				width: 50%;
+			}
 
-            .logo.active {
-                display: block;
-            }
+			.logo.active {
+				display: block;
+			}
 		}
 	}
-
 }
 
 .heat-pumps {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2rem 0;
+	width: 100vw;
+    
+	.about-pumps {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+        
+		.about-pumps-left {
+            text-align: center;
+			width: 100%;
 
-    .about-pumps {
+			img {
+                width: 90%;
+			}
+		}
+        
+		.about-pumps-right {
+            width: 85%;
+			text-align: center;
+            
+			span {
+                color: #7d248f;
+				font-size: 2.5rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.pumps-icons {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.1);
+		display: flex;
+		justify-content: space-around;
+        padding: 5rem 0;
+		width: 100vw;
+
+        .pumps-icons-list {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .pumps-icon {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 5rem;
+                text-align: center;
+                width: 70%;
+    
+                .pumps-icon-img {
+                    width: 100%;
+    
+                    img {
+                        width: 10rem;
+                    }
+                }
+    
+                .pumps-icon-title {
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                }
+            }
+        }
+	}
+
+    .pumps-combo {
         align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
 
-        .about-pumps-left {
-            text-align: center;
-            width: 100%;
-            
+        .pumps-combo-el, .pumps-combo-final {
+            align-items: center;
+            border-radius: 5rem;
+            color: #fff;
+            display: flex;
+            height: 20rem;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 90%;
+
             img {
-                width: 90%;
+                width: 13rem;
+                padding: 2rem;
+            }
+            
+            
+        }
+        .pumps-combo-el {
+            background-color: rgba(0, 0, 0, 0.7);
+            
+            p {
+                font-size: 3rem;
             }
         }
 
-        .about-pumps-right {
-            width: 85%;
+        .pumps-combo-final {
+            background-color: #8cc63e;
             text-align: center;
 
-            span {
-                color: #7d248f;
+            p {
                 font-size: 2.5rem;
-                font-weight: bold;
             }
+        }
+
+        .pumps-combo-plus {
+            color: #7d248f;
+            font-size: 3rem;
+            margin: 3rem;
         }
     }
 }
@@ -1090,60 +1177,120 @@ header {
 		}
 	}
 
+	.heat-pumps {
+		.about-pumps {
+			flex-direction: row;
+			padding: 2rem;
+		}
+
+		.pumps-icons {
+            .pumps-icons-list{
+                align-items: flex-start;
+                flex-direction: row;
+
+                .pumps-icon {
+                    .pumps-icon-img {
+                        img {
+                            width: 5rem;
+                        }
+                    }
+    
+                    .pumps-icon-title {
+                        font-size: 1.6rem;
+                    }
+    
+                    .pumps-icon-text {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+		}
+
+        .pumps-combo {
+            flex-direction: row;
+
+            .pumps-combo-el, .pumps-combo-final {
+                height: 20rem;
+                width: 20rem;
+
+                img {
+                    width: 10rem;
+                }
+            }
+
+            .pumps-combo-el {
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .pumps-combo-final {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .pumps-combo-plus {
+                font-size: 5rem;
+                margin: 1rem;
+            }
+        }
+	}
+
 	.partners {
 		.partners-main {
 			.logos {
-                align-items: center;
-                display: flex;
-                height: 15rem;
-                justify-content: center;
+				align-items: center;
+				display: flex;
+				height: 15rem;
+				justify-content: center;
 				padding: 2rem;
 				position: relative;
 
 				.logo {
 					animation: slideShow 30s linear infinite;
-                    display: block;
+					display: block;
 					left: 0;
 					margin: 2rem 1rem;
-                    opacity: 0;
+					opacity: 0;
 					position: absolute;
 					top: 0;
 					width: 15rem;
 				}
 
-                .first-logo {
-                    animation-delay: 3s;
-                }
-                .second-logo {
-                    animation-delay: 6s;
-                }
-                .third-logo {
-                    animation-delay: 9s;
-                }
+				.first-logo {
+					animation-delay: 3s;
+				}
+				.second-logo {
+					animation-delay: 6s;
+				}
+				.third-logo {
+					animation-delay: 9s;
+				}
 
-                .fourth-logo {
-                    animation-delay: 12s;
-                }
-                .fifth-logo {
-                    animation-delay: 15s;
-                }
-                .sixth-logo {
-                    animation-delay: 18s;
-                }
-                .seventh-logo {
-                    animation-delay: 21s;
-                }
-                .eighth-logo {
-                    animation-delay: 24s;
-                }
-                .ninth-logo {
-                    animation-delay: 27s;
-                }
-                
-                .tenth-logo {
-                    animation-delay: 30s;
-                    // height: 5rem;
-                }
+				.fourth-logo {
+					animation-delay: 12s;
+				}
+				.fifth-logo {
+					animation-delay: 15s;
+				}
+				.sixth-logo {
+					animation-delay: 18s;
+				}
+				.seventh-logo {
+					animation-delay: 21s;
+				}
+				.eighth-logo {
+					animation-delay: 24s;
+				}
+				.ninth-logo {
+					animation-delay: 27s;
+				}
+
+				.tenth-logo {
+					animation-delay: 30s;
+					// height: 5rem;
+				}
 			}
 		}
 	}
@@ -1234,6 +1381,28 @@ header {
 		}
 	}
 
+    .heat-pumps {
+        .pumps-icons {
+            .pumps-icons-list {
+                .pumps-icon {
+                    .pumps-icon-img {
+                        img {
+                            width: 7rem;
+                        }
+                    }
+    
+                    .pumps-icon-title {
+                        font-size: 1.8rem;
+                    }
+    
+                    .pumps-icon-text {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
 	.partners {
 		.partners-main {
 			h2 {
@@ -1248,7 +1417,6 @@ header {
 				padding: 3rem;
 
 				.logo {
-					// width: 15rem;
 					margin: 2rem 1rem;
 				}
 			}
@@ -1300,7 +1468,7 @@ header {
 
 @keyframes slideShow {
 	0% {
-        opacity: 1;
+		opacity: 1;
 		left: 100%;
 	}
 	100% {
