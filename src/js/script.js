@@ -7,32 +7,20 @@ const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 const images = document.querySelectorAll('.partners-logo');
-const partnersLogos = document.querySelector('.partners-logos')
+const partnersLogos = document.querySelector('.partners-logos');
+const logos = document.querySelectorAll('.partners-logo');
 
 let count = 0;
-let intervalId;
 
-function checkWidth() {
-	if (window.innerWidth < 768) {
-		if (!intervalId) {
-			intervalId = setInterval(function () {
-				images.forEach(img => (img.style.display = 'none'));
-				images[count].style.display = 'block';
-				count++;
-				if (count === images.length) {
-					count = 0;
-				}
-			}, 3000);
-		}
-	} else {
-		clearInterval(intervalId);
-		intervalId = null;
-        images.forEach(img => (img.style.display = 'block'))
-	}
-}
+let currentLogo = 0;
 
-checkWidth();
-window.onresize = checkWidth;
+logos[currentLogo].classList.add('active');
+
+setInterval(() => {
+	logos[currentLogo].classList.remove('active');
+	currentLogo = (currentLogo + 1) % logos.length;
+	logos[currentLogo].classList.add('active');
+}, 3000);
 
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
