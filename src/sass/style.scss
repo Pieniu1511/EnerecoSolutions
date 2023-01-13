@@ -309,8 +309,8 @@ header {
 		width: 100%;
 
 		.progress {
-            background-color: #000;
-            height: 1rem;
+			background-color: #000;
+			height: 1rem;
 			left: 0;
 			position: absolute;
 			top: 0;
@@ -680,7 +680,7 @@ header {
 		margin-bottom: 3rem;
 		margin-top: 5rem;
 		padding: 2rem;
-        text-align: center;
+		text-align: center;
 
 		span {
 			color: #8cc63e;
@@ -777,114 +777,117 @@ header {
 		}
 	}
 
-    .pv-place {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
+	.pv-place {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
 
-        &-title {
-            align-items: center;
-            background-position: center;
-            background-size: cover;
-            color: #fff;
-            display: flex;
-            height: 25rem;
-            justify-content: center;
-            position: relative;
-            width: 90%;
-            z-index: -1;
+		&-title {
+			align-items: center;
+			background-position: center;
+			background-size: cover;
+			color: #fff;
+			display: flex;
+			height: 25rem;
+			justify-content: center;
+			position: relative;
+			width: 90%;
+			z-index: -1;
 
-            &-shadow {
-                background-color: rgba(0, 0, 0, 0.6);
-                height: 100%;
-                left: 0;
-                top: 0;
-                position: absolute;
-                width: 100%;
-                z-index: 0;
-            }
+			&-shadow {
+				background-color: rgba(0, 0, 0, 0.6);
+				height: 100%;
+				left: 0;
+				top: 0;
+				position: absolute;
+				width: 100%;
+				z-index: 0;
+			}
 
-            &-text {
-                font-size: 4rem;
-                text-align: center;
-                text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
-                text-transform: uppercase;
-                z-index: 1;
+			&-text {
+				font-size: 4rem;
+				text-align: center;
+				text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.7);
+				text-transform: uppercase;
+				z-index: 1;
 
-                i {
-                    color: #8cc63e;
-                }
-            }
-        }
+				i {
+					color: #8cc63e;
+				}
+			}
+		}
 
-        &-text {
-            width: 85%;
-            padding: 2rem;
+		&-text {
+			width: 85%;
+			padding: 2rem;
 
-            div {
-                margin-bottom: 2rem;
-            }
+			div {
+				margin-bottom: 2rem;
+			}
 
-            span {
-                color: #7d248f;
-                font-weight: bold;
-            }
+			span {
+				color: #7d248f;
+				font-weight: bold;
+			}
 
-            i {
-                color: #7d248f;
-            }
-        }
+			i {
+				color: #7d248f;
+			}
+		}
 
-        .pv-home {
-            background-image: url('../img/pv-place-home.jpg');
-        }
+		.pv-home {
+			background-image: url('../img/pv-place-home.jpg');
+		}
 
-        .pv-company {
-            background-image: url('../img/pv-place-company.jpg');
-        }
+		.pv-company {
+			background-image: url('../img/pv-place-company.jpg');
+		}
 
-        .pv-agro {
-            background-image: url('../img/pv-place-agro.jpg');
-        }
-    }
+		.pv-agro {
+			background-image: url('../img/pv-place-agro.jpg');
+		}
+	}
 }
 
 .partners {
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	width: 100vw;
 
-    .partners-main {
-        width: 100%;
+	.partners-main {
+		width: 100%;
 
-        h2 {
-            font-size: 2rem;
-            text-align: center;
-            margin-top: 2rem;
+		h2 {
+			font-size: 2rem;
+			text-align: center;
+			margin-top: 2rem;
 
-            span {
-                color: #8cc63e;
-                font-size: 4rem;
-            }
-        }
+			span {
+				color: #8cc63e;
+				font-size: 4rem;
+			}
+		}
 
-        .partners-logos {
-            align-items: center;
-            display: flex;
-            height: 15rem;
-            justify-content: center;
-            width: 100%;
+		.partners-logos {
+			align-items:flex-end;
+			display: flex;
+			flex-direction: column;
+			height: 15rem;
+			justify-content: center;
+			width: 100%;
 
-            .partners-logo {
-                margin: 3rem 0;
-                width: 50%;
-            }
-        }
-    }
+			.partners-logo {
+				display: none;
+				margin: 3rem 0;
+				width: 30%;
+			}
+		}
+
+	}
 }
 
 // MEDIA
@@ -1047,22 +1050,66 @@ header {
 		}
 	}
 
-    .partners {
-        .partners-main {
+	.partners {
 
-            .partners-logos {
-                height: 35rem;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                padding: 2rem;
+		.partners-main {
+			.partners-logos {
+                align-items: center;
+                display: flex;
+                height: 15rem;
+                justify-content: center;
+				padding: 2rem;
+				position: relative;
 
-                .partners-logo {
-                    width: 10rem;
-                    margin: 2rem 1rem;
+				.partners-logo {
+					animation: slideShow 30s linear infinite;
+					left: 0;
+                    // height: 7rem;
+					margin: 2rem 1rem;
+					// object-fit: cover;
+                    opacity: 0;
+					position: absolute;
+					top: 0;
+					width: 15rem;
+                    // width: auto;
+				}
+
+                .first-logo {
+                    animation-delay: 3s;
                 }
-            }
-        }
-    }
+                .second-logo {
+                    animation-delay: 6s;
+                }
+                .third-logo {
+                    animation-delay: 9s;
+                }
+
+                .fourth-logo {
+                    animation-delay: 12s;
+                }
+                .fifth-logo {
+                    animation-delay: 15s;
+                }
+                .sixth-logo {
+                    animation-delay: 18s;
+                }
+                .seventh-logo {
+                    animation-delay: 21s;
+                }
+                .eighth-logo {
+                    animation-delay: 24s;
+                }
+                .ninth-logo {
+                    animation-delay: 27s;
+                }
+                
+                .tenth-logo {
+                    animation-delay: 30s;
+                    // height: 5rem;
+                }
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -1087,11 +1134,11 @@ header {
 		}
 	}
 
-    .loading-site {
-        img {
-            width: 30rem;
-        }
-    }
+	.loading-site {
+		img {
+			width: 30rem;
+		}
+	}
 
 	.hero {
 		.hero-video {
@@ -1150,27 +1197,26 @@ header {
 		}
 	}
 
-    .partners {
-        .partners-main {
-            h2 {
-                font-size: 4rem;
+	.partners {
+		.partners-main {
+			h2 {
+				font-size: 4rem;
 
-                span {
-                    font-size: 6rem;
-                }
-            }
+				span {
+					font-size: 6rem;
+				}
+			}
 
-            .partners-logos {
-                height: 35rem;
-                padding: 3rem;
+			.partners-logos {
+				padding: 3rem;
 
-                .partners-logo {
-                    width: 15rem;
-                    margin: 2rem 1rem;
-                }
-            }
-        }
-    }
+				.partners-logo {
+					// width: 15rem;
+					margin: 2rem 1rem;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -1201,24 +1247,6 @@ header {
 			}
 		}
 	}
-
-    .partners {
-        .partners-main {
-            h2 {
-                font-size: 5rem;
-
-                span {
-                    font-size: 7rem;
-                }
-            }
-
-            .partners-logos {
-                .partners-logo {
-                    width: 20rem;
-                }
-            }
-        }
-    }
 }
 
 // ANIMACJE
@@ -1230,5 +1258,15 @@ header {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes slideShow {
+	0% {
+        opacity: 1;
+		left: 100%;
+	}
+	100% {
+		left: -100%;
 	}
 }
