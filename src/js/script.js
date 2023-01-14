@@ -5,30 +5,22 @@ const cards = document.querySelectorAll('.card');
 const dropdown = document.querySelector('.nav-item--dropdown');
 const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
+// const logos = document.querySelector('.pv');
 const body = document.querySelector('body');
-const logos = document.querySelectorAll('.logo-change');
+const logos = document.querySelectorAll('.mark');
 
 let currentLogo = 0;
 
-console.log(logos)
-// logos[currentLogo].classList.add('active');
-logos[currentLogo].style.display = "block";
-console.log(logos[currentLogo]);
+if (logos.length !== 0) {
+	console.log(logos);
+	logos[currentLogo].classList.add('active');
 
-setInterval(() => {
-    console.log('działa')
-    logos[currentLogo].style.display = "none";
-    currentLogo = (currentLogo + 1) % logos.length;
-    logos[currentLogo].classList.add('active');
-    logos[currentLogo].style.display = "block";
-}, 3000);
-// logos[currentLogo].classList.add('active');
-
-// setInterval(() => {
-// 	logos[currentLogo].classList.remove('active');
-// 	currentLogo = (currentLogo + 1) % logos.length;
-// 	logos[currentLogo].classList.add('active');
-// }, 3000);
+	setInterval(() => {
+		logos[currentLogo].classList.remove('active');
+		currentLogo = (currentLogo + 1) % logos.length;
+		logos[currentLogo].classList.add('active');
+	}, 3000);
+}
 
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');

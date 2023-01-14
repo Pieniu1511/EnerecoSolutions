@@ -880,13 +880,13 @@ header {
 			justify-content: center;
 			width: 100%;
 
-			.logo-change {
+			.mark {
 				display: none;
 				margin: 3rem 0;
 				width: 50%;
 			}
 
-			.logo-change.active {
+			.mark.active {
 				display: block;
 			}
 		}
@@ -1123,7 +1123,7 @@ header {
     .partners {
         .partners-main {
             .logos {
-                .logo-change {
+                .mark {
                     width: 35%;
                 }
             }
@@ -1306,7 +1306,7 @@ header {
 				padding: 2rem;
 				position: relative;
 
-				.logo-change {
+				.mark {
 					animation: slideShow 30s linear infinite;
 					display: block;
 					left: 0;
@@ -1490,7 +1490,7 @@ header {
 			.logos {
 				padding: 3rem;
 
-				.logo-change {
+				.mark {
 					margin: 2rem 1rem;
 				}
 			}
