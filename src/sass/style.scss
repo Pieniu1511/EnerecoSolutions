@@ -1154,7 +1154,7 @@ header {
         justify-content: center;
 
         &-answer {
-            font-size: 2rem;
+            font-size: 2.4rem;
             margin-bottom: 3rem;
             padding: 1rem;
             text-align: center;
@@ -1168,14 +1168,20 @@ header {
             width: 100%;
 
             .cheapenergy-answer {
-                // border: 0.1rem 0.1rem solid #000;
-                color: #fff;
                 padding: 1rem;
                 text-align: center;
+                margin-bottom: 2rem;
                 width: 90%;
+
+                &-img {
+                    img {
+                        width: 10rem;
+                    }
+                }
 
                 &-title {
                     font-size: 2.5rem;
+                    font-weight: bold;
                     margin-bottom: 1rem;
                     text-transform: uppercase;
                 }
@@ -1183,14 +1189,6 @@ header {
                 p {
                     font-size: 2rem;
                 }
-            }
-
-            .answer-green {
-                background-color: #8cc63e;
-            }
-
-            .answer-black {
-                background-color: #000;
             }
         }
     }
@@ -1469,6 +1467,26 @@ header {
                 height: 70%;
                 width: 70%;
             }
+        }
+
+        .cheapenergy-question {
+            h2 {
+                font-size: 4rem;
+
+                span {
+                    font-size: 6rem;
+                }
+            }
+
+            .cheapenergy-answers {
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                .cheapenergy-answer {
+                    width: 45%;
+                }
+            }
+
         }
 
 
