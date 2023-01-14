@@ -8,9 +8,6 @@ const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 const logos = document.querySelectorAll('.logo');
 
-let count = 0;
-console.log(logos);
-
 let currentLogo = 0;
 logos[currentLogo].classList.add('active');
 

@@ -310,7 +310,7 @@ header {
 	height: 100vh;
 	justify-content: center;
 	left: 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100vw;
 	z-index: 1000;
@@ -898,7 +898,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 2rem 0;
+    margin-top: 2rem;
 	width: 100vw;
     
 	.about-pumps {
@@ -906,6 +906,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+        margin: 2rem 0;
 		width: 100%;
         
 		.about-pumps-left {
@@ -933,9 +934,12 @@ header {
         align-items: center;
         background-color: rgba(0, 0, 0, 0.1);
 		display: flex;
-		justify-content: space-around;
-        padding: 5rem 0;
+        flex-direction: column;
 		width: 100vw;
+
+        h2 {
+            margin: 1rem;
+        }
 
         .pumps-icons-list {
             align-items: center;
@@ -977,17 +981,17 @@ header {
 
         .pumps-combo-el, .pumps-combo-final {
             align-items: center;
-            border-radius: 5rem;
+            border-radius: 2rem;
             color: #fff;
             display: flex;
-            height: 20rem;
+            height: 15rem;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 90%;
+            padding: 1rem;
+            width: 70%;
 
             img {
-                width: 13rem;
-                padding: 2rem;
+                width: 7rem;
             }
             
             
@@ -996,7 +1000,7 @@ header {
             background-color: rgba(0, 0, 0, 0.7);
             
             p {
-                font-size: 3rem;
+                font-size: 2.4rem;
             }
         }
 
@@ -1005,7 +1009,7 @@ header {
             text-align: center;
 
             p {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
             }
         }
 
@@ -1013,6 +1017,51 @@ header {
             color: #7d248f;
             font-size: 3rem;
             margin: 3rem;
+        }
+    }
+
+    .pumps-tips {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+
+        .pumps-tips-list {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            .pumps-tip {
+                align-items: start;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 5rem;
+                width: 80%;
+
+                &-img {
+                    color: #8cc63e;
+                    font-size: 4rem;
+                    margin-right: 3rem;
+                }
+
+                &-text {
+                    align-items: start;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+
+                    .pumps-tip-title {
+                        font-weight: bold;
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+                    } 
+                }
+            }
+
         }
     }
 }
@@ -1259,38 +1308,53 @@ header {
 				}
 
 				.first-logo {
-					animation-delay: 3s;
+					animation-delay: 0s;
 				}
 				.second-logo {
-					animation-delay: 6s;
+					animation-delay: 3s;
 				}
 				.third-logo {
-					animation-delay: 9s;
+					animation-delay: 6s;
 				}
 
 				.fourth-logo {
-					animation-delay: 12s;
+					animation-delay: 9s;
 				}
 				.fifth-logo {
-					animation-delay: 15s;
+					animation-delay: 12s;
 				}
 				.sixth-logo {
-					animation-delay: 18s;
+					animation-delay: 15s;
 				}
 				.seventh-logo {
-					animation-delay: 21s;
+					animation-delay: 18s;
 				}
 				.eighth-logo {
-					animation-delay: 24s;
+					animation-delay: 21s;
 				}
 				.ninth-logo {
-					animation-delay: 27s;
+					animation-delay: 24s;
 				}
 
 				.tenth-logo {
-					animation-delay: 30s;
-					// height: 5rem;
+					animation-delay: 27s;
 				}
+
+                .eleventh-logo {
+                    animation-delay: 0;
+                }
+
+                .twelft-logo {
+                    animation-delay: 7s;
+                }
+
+                .thirteenth-logo {
+                    animation-delay: 14s;
+                }
+
+                .fourteenth-logo {
+                    animation-delay: 21s;
+                }
 			}
 		}
 	}
