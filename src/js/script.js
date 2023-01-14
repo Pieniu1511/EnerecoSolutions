@@ -9,13 +9,25 @@ const body = document.querySelector('body');
 const logos = document.querySelectorAll('.logo');
 
 let currentLogo = 0;
-logos[currentLogo].classList.add('active');
+
+// logos[currentLogo].classList.add('active');
+logos[currentLogo].style.display = "block";
+console.log(logos[currentLogo]);
 
 setInterval(() => {
-	logos[currentLogo].classList.remove('active');
-	currentLogo = (currentLogo + 1) % logos.length;
-	logos[currentLogo].classList.add('active');
+    console.log('działa')
+    logos[currentLogo].style.display = "none";
+    currentLogo = (currentLogo + 1) % logos.length;
+    logos[currentLogo].classList.add('active');
+    logos[currentLogo].style.display = "block";
 }, 3000);
+// logos[currentLogo].classList.add('active');
+
+// setInterval(() => {
+// 	logos[currentLogo].classList.remove('active');
+// 	currentLogo = (currentLogo + 1) % logos.length;
+// 	logos[currentLogo].classList.add('active');
+// }, 3000);
 
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');

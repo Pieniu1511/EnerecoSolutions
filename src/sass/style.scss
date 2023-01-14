@@ -80,7 +80,7 @@ header {
 	justify-content: space-between;
 	margin: 2rem;
 
-	.logo {
+	.logo-enereko {
 		width: 40%;
 
 		img {
@@ -172,7 +172,7 @@ header {
 		max-width: 1200px;
 		width: 100%;
 
-		.logo {
+		.logo-enereko {
 			cursor: pointer;
 			height: 100%;
 
@@ -272,7 +272,7 @@ header {
 			flex-direction: column;
 			justify-content: space-around;
 
-			.logo {
+			.logo-enereko {
 				img {
 					width: 18rem;
 				}
@@ -1069,7 +1069,7 @@ header {
 // MEDIA
 @media (min-width: 576px) {
 	.nav-mobile {
-		.logo {
+		.logo-enereko {
 			width: 30%;
 		}
 
@@ -1119,6 +1119,16 @@ header {
 			}
 		}
 	}
+
+    .partners {
+        .partners-main {
+            .logos {
+                .logo {
+                    width: 35%;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -1140,7 +1150,7 @@ header {
 	}
 
 	.nav-mobile {
-		.logo {
+		.logo-enereko {
 			width: 20%;
 		}
 
@@ -1362,7 +1372,7 @@ header {
 
 @media (min-width: 992px) {
 	.nav-mobile {
-		.logo {
+		.logo-enereko {
 			margin-left: 3rem;
 			width: 15%;
 		}
