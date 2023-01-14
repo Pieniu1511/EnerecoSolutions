@@ -11,7 +11,6 @@ const logos = document.querySelectorAll('.mark');
 let currentLogo = 0;
 
 if (logos.length !== 0) {
-	console.log(logos);
 	logos[currentLogo].classList.add('active');
 
 	setInterval(() => {
