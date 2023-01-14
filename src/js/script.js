@@ -23,7 +23,7 @@ if (logos.length !== 0) {
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
 dropdownMenu.innerHTML =
-	'<a href="installations.html">Instalacje fotowoltaiczne</a><a href="heatpumps.html">Pompy ciepła</a><a href="cheapenergy.html">Tania energia</a><a href="grants.html">Dotacje</a>';
+'<a href="installations.html">Instalacje fotowoltaiczne</a><a href="heatpumps.html">Pompy ciepła</a><a href="cheapenergy.html">Tania energia</a>';
 dropdown.appendChild(dropdownMenu);
 
 cards.forEach(card => {

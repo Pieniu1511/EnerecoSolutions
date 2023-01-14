@@ -553,6 +553,7 @@ header {
 			display: flex;
 			flex-direction: column;
 			font-size: 1.4rem;
+            justify-content: space-between;
 			margin: 2rem;
 			overflow: hidden;
 			position: relative;
@@ -561,6 +562,19 @@ header {
 			&:hover .product-card__img {
 				transform: scale(1.1);
 			}
+
+            &__moreinfo {
+                align-self: flex-end;
+                color: #7d248f;
+                font-weight: bold;
+                padding: 2rem;
+                text-decoration: none;
+                transition: color .3s;
+
+                &:hover {
+                    color: #8cc63e;
+                }
+            }
 
 			&__img {
 				background-position: center;
@@ -1326,7 +1340,36 @@ header {
                 margin: 1rem;
             }
         }
+
+        .partners {
+            .partners-main {
+                h2 {
+                    font-size: 3rem;
+
+                    span {
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
 	}
+
+    .cheapenergy {
+
+
+
+        .partners {
+            .partners-main {
+                h2 {
+                    font-size: 3rem;
+
+                    span {
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+        }
+    }
 
 	.partners {
 		.partners-main {
@@ -1396,6 +1439,30 @@ header {
 
                 .fourteenth-logo {
                     animation-delay: 21s;
+                }
+
+                .fifteenth-logo {
+                    animation-delay: 0;
+                }
+
+                .sixteenth-logo {
+                    animation-delay: 5s;
+                }
+
+                .seventeenth-logo {
+                    animation-delay: 10s;
+                }
+
+                .eightteenth-logo {
+                    animation-delay: 15s;
+                }
+
+                .nineteenth-logo {
+                    animation-delay: 20s;
+                }
+
+                .twentieth-logo {
+                    animation-delay: 25s;
                 }
 			}
 		}
