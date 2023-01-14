@@ -5,7 +5,6 @@ const cards = document.querySelectorAll('.card');
 const dropdown = document.querySelector('.nav-item--dropdown');
 const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
-// const logos = document.querySelector('.pv');
 const body = document.querySelector('body');
 const logos = document.querySelectorAll('.mark');
 
