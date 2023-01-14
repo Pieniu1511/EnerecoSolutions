@@ -80,7 +80,7 @@ header {
 	justify-content: space-between;
 	margin: 2rem;
 
-	.logo-enereko {
+	.logo {
 		width: 40%;
 
 		img {
@@ -172,7 +172,7 @@ header {
 		max-width: 1200px;
 		width: 100%;
 
-		.logo-enereko {
+		.logo {
 			cursor: pointer;
 			height: 100%;
 
@@ -272,7 +272,7 @@ header {
 			flex-direction: column;
 			justify-content: space-around;
 
-			.logo-enereko {
+			.logo {
 				img {
 					width: 18rem;
 				}
@@ -880,13 +880,13 @@ header {
 			justify-content: center;
 			width: 100%;
 
-			.logo {
+			.logo-change {
 				display: none;
 				margin: 3rem 0;
 				width: 50%;
 			}
 
-			.logo.active {
+			.logo-change.active {
 				display: block;
 			}
 		}
@@ -1069,7 +1069,7 @@ header {
 // MEDIA
 @media (min-width: 576px) {
 	.nav-mobile {
-		.logo-enereko {
+		.logo {
 			width: 30%;
 		}
 
@@ -1123,7 +1123,7 @@ header {
     .partners {
         .partners-main {
             .logos {
-                .logo {
+                .logo-change {
                     width: 35%;
                 }
             }
@@ -1150,7 +1150,7 @@ header {
 	}
 
 	.nav-mobile {
-		.logo-enereko {
+		.logo {
 			width: 20%;
 		}
 
@@ -1306,7 +1306,7 @@ header {
 				padding: 2rem;
 				position: relative;
 
-				.logo {
+				.logo-change {
 					animation: slideShow 30s linear infinite;
 					display: block;
 					left: 0;
@@ -1372,7 +1372,7 @@ header {
 
 @media (min-width: 992px) {
 	.nav-mobile {
-		.logo-enereko {
+		.logo {
 			margin-left: 3rem;
 			width: 15%;
 		}
@@ -1490,7 +1490,7 @@ header {
 			.logos {
 				padding: 3rem;
 
-				.logo {
+				.logo-change {
 					margin: 2rem 1rem;
 				}
 			}

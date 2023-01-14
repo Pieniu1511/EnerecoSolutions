@@ -6,10 +6,11 @@ const dropdown = document.querySelector('.nav-item--dropdown');
 const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
-const logos = document.querySelectorAll('.logo');
+const logos = document.querySelectorAll('.logo-change');
 
 let currentLogo = 0;
 
+console.log(logos)
 // logos[currentLogo].classList.add('active');
 logos[currentLogo].style.display = "block";
 console.log(logos[currentLogo]);
