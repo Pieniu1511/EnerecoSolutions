@@ -13,6 +13,7 @@ console.log(logos);
 
 let currentLogo = 0;
 logos[currentLogo].classList.add('active');
+
 setInterval(() => {
 	logos[currentLogo].classList.remove('active');
 	currentLogo = (currentLogo + 1) % logos.length;
