@@ -20,6 +20,8 @@ if (logos.length !== 0) {
 	}, 3000);
 }
 
+
+
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
 dropdownMenu.innerHTML =
@@ -45,6 +47,7 @@ const closeMenu = () => {
 	offerOptions.classList.remove('show-options');
 	body.style.overflow = 'auto';
 };
+
 
 burgerBtn.addEventListener('click', showMenu);
 closeBtn.addEventListener('click', closeMenu);
