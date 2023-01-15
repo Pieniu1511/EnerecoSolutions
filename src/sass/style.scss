@@ -116,16 +116,16 @@ header {
 
         .rotate {
             transform: rotate(180deg);
-            transition: transform 0.5s;
+            transition: transform .5s;
         }
-
+        
 		.offer-options {
-			align-items: center;
+            align-items: center;
 			display: none;
 			flex-direction: column;
-
+            
 			a {
-				font-size: 1.4rem;
+                font-size: 1.4rem;
 				margin-bottom: 2.5rem;
 			}
 		}
@@ -1251,6 +1251,86 @@ header {
     }
 }
 
+.aboutus {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+    .aboutus-top {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        width: 100%;
+
+        &-logo {
+            width: 70%;
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-text {
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 2rem;
+
+                span {
+                    color: #69962f;
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+
+            p {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+.contact {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+
+    &-logo {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    &-form {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 95%;
+
+        &-label {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        &-input {
+            font-size: 2.5rem;
+            height: 5rem;
+            width: 100%;
+        }
+    }
+}
+
 
 
 // MEDIA
@@ -1561,6 +1641,30 @@ header {
         }
     }
 
+    .aboutus {
+
+        .aboutus-top {
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+            &-logo {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+
+                img {
+                    margin-bottom: 10rem;
+                }
+            }
+
+            &-text {
+                width: 45%;
+            }
+        }
+    }
+
 	.partners {
 		.partners-main {
 			.logos {
@@ -1797,6 +1901,16 @@ header {
     .cheapenergy {
         .cheapenergy-top {
             background-image: url('../img/cheapenergy-top-bg-l.jpg');
+        }
+    }
+
+    .aboutus {
+        .aboutus-top {
+            &-logo {
+                :first-child {
+                    width: 70%;
+                }
+            }
         }
     }
 }
