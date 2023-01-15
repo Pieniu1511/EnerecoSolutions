@@ -114,6 +114,11 @@ header {
 		width: 100vw;
 		z-index: 20;
 
+        .rotate {
+            transform: rotate(180deg);
+            transition: transform 0.5s;
+        }
+
 		.offer-options {
 			align-items: center;
 			display: none;

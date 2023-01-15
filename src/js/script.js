@@ -7,6 +7,8 @@ const offerBtn = document.querySelector('.offer');
 const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 const logos = document.querySelectorAll('.mark');
+const offer = document.querySelector('.offer');
+const i = document.querySelector('.offer i');
 
 let currentLogo = 0;
 
@@ -54,4 +56,7 @@ closeBtn.addEventListener('click', closeMenu);
 offerBtn.addEventListener('click', function (e) {
 	e.preventDefault();
 	offerOptions.classList.toggle('show-options');
+});
+offer.addEventListener('click', () => {
+    i.classList.toggle('rotate');
 });
