@@ -1252,6 +1252,41 @@ header {
 		}
 	}
 
+    .cheapenergy-question-answer, .cheapenergy-mid {
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .cheapenergy-img {
+        align-items: center;
+        background-image: url('../img/pexels-karolina-grabowska-s.jpg');
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        font-size: 3rem;
+        display: flex;
+        height: 20rem;
+        justify-content: center;
+        padding: 1rem;
+        position: relative;
+        width: 100vw;
+
+        &-shadow {
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        &-text {
+            text-align: center;
+            z-index: 1;
+        }
+    }
+
 	.cheapenergy-question {
 		align-items: center;
 		display: flex;
@@ -1259,10 +1294,7 @@ header {
 		justify-content: center;
 
 		&-answer {
-			font-size: 2.4rem;
 			margin-bottom: 3rem;
-			padding: 1rem;
-			text-align: center;
 		}
 
 		.cheapenergy-answers {
@@ -1755,15 +1787,24 @@ header {
 			}
 		}
 
+        .cheapenergy-mid, .cheapenergy-question {
+            h2 {
+                font-size: 4rem;
+    
+                span {
+                    font-size: 6rem;
+                }
+            }
+
+        }
+
+        .cheapenergy-img {
+            background-image: url('../img/pexels-karolina-grabowska-l.jpg');
+            height: 35rem;
+            font-size: 6rem;
+        }
+
 		.cheapenergy-question {
-			h2 {
-				font-size: 4rem;
-
-				span {
-					font-size: 6rem;
-				}
-			}
-
 			.cheapenergy-answers {
 				flex-direction: row;
 				flex-wrap: wrap;
