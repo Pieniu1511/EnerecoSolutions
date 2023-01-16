@@ -744,6 +744,7 @@ header {
 
 				i {
 					color: #7d248f;
+                    margin-right: 1rem;
 				}
 			}
 		}
@@ -752,6 +753,7 @@ header {
 			align-items: center;
 			display: flex;
 			flex-direction: column;
+            justify-content: center;
 
 			.pv-tile {
 				align-items: center;
@@ -1294,6 +1296,7 @@ header {
 }
 
 .contact {
+    background-color: rgba(0, 0, 0, 0.1);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -1310,7 +1313,7 @@ header {
     }
 
     &-form {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: 2rem;
         padding: 1rem;
         width: 95%;
@@ -1320,13 +1323,29 @@ header {
             display: flex;
             justify-content: space-between;
             margin-bottom: 1rem;
-            width: 100%;
+            text-transform: uppercase;
+            width: 90%;
         }
 
         &-input {
-            font-size: 2.5rem;
-            height: 5rem;
-            width: 100%;
+            border-radius: .4rem;
+            font-size: 1.6rem;
+            height: 4rem;
+            margin-bottom: 2.5rem;
+            width: 90%;
+        }
+
+        &-option {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+        
+        &-textarea {
+            border-radius: .4rem;
+            font-size: 1.6rem;
+            min-height: 10rem;
+            max-width: 100%;
+            width: 90%;
         }
     }
 }
