@@ -1373,6 +1373,42 @@ header {
 	}
 }
 
+.aboutus-cards {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 4rem 1rem;
+    width: 100vw;
+
+    &-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        .aboutus-card {
+            margin-bottom: 4rem;
+            text-align: center;
+            width: 90%;
+
+            &-img {
+                margin-bottom: 1rem;
+
+                img {
+                    width: 12rem;
+                }
+            }
+
+            &-title {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .contact {
 	background-color: rgba(140, 198, 62, 0.1);
 	align-items: center;
@@ -1850,6 +1886,24 @@ header {
 			}
 		}
 	}
+
+    .aboutus-cards {
+        &-container {
+            flex-direction: row;
+
+            .aboutus-card {
+                &-img {
+                    img {
+                        width: 10rem;
+                    }
+                }
+
+                &-title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
 
 	.contact {
 		.contact-main {
