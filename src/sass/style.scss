@@ -431,6 +431,10 @@ header {
 		position: relative;
 		width: 100vw;
 
+        .video-big {
+            display: none;
+        }
+
 		.hero-video__text {
 			height: 100%;
 			position: relative;
@@ -1244,7 +1248,7 @@ header {
 			padding: 1rem;
 			width: 85%;
 
-			h2 {
+			h1 {
 				font-size: 3.3rem;
 				margin: 1rem;
 				text-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.2);
@@ -1684,6 +1688,13 @@ header {
 				font-size: 3.5rem;
 			}
 		}
+
+        .video-big {
+            display: block;
+        }
+        .video-small {
+            display: none;
+        }
 	}
 
 	.cards {
@@ -1859,6 +1870,10 @@ header {
 	.cheapenergy {
 		.cheapenergy-top {
 			height: 50rem;
+
+            h1 {
+                font-size: 6rem;
+            }
 
 			&-text {
 				height: 70%;
