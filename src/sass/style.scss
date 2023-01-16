@@ -294,15 +294,22 @@ header {
 	}
 
 	.footer-info {
+        align-items: center;
 		background-color: #8cc63e;
-		display: flex;
-		flex-direction: column;
+        display: flex;
+        justify-content: center;
 		padding: 2rem;
-		width: 100%;
-
-		p {
-			margin: 2rem 0;
-		}
+		width: 100vw;
+        
+        &-text {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+                    p {
+                        margin: 2rem 0;
+                    }
+        }
 	}
 }
 
@@ -1561,8 +1568,10 @@ header {
 		}
 
 		.footer-info {
-			flex-direction: row;
-			justify-content: space-between;
+            &-text {
+                flex-direction: row;
+                justify-content: space-between;
+            }
 		}
 	}
 
