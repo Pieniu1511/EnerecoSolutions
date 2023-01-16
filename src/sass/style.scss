@@ -1296,7 +1296,8 @@ header {
 }
 
 .contact {
-    background-color: rgba(0, 0, 0, 0.1);
+    // background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(140, 198, 62, .1);
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -1313,7 +1314,11 @@ header {
     }
 
     &-form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         font-size: 2rem;
+        justify-content: center;
         margin-top: 2rem;
         padding: 1rem;
         width: 95%;
@@ -1343,9 +1348,22 @@ header {
         &-textarea {
             border-radius: .4rem;
             font-size: 1.6rem;
+            margin-bottom: 2rem;
             min-height: 10rem;
             max-width: 100%;
             width: 90%;
+        }
+
+        &-btn {
+            background-color: #8cc63e;
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 1rem 2rem;
+            width: 90%;
+
+            &:hover {
+                background-color: #69962f;
+            }
         }
     }
 }
