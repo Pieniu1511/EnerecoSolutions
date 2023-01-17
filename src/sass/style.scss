@@ -1492,7 +1492,7 @@ header {
 			align-items: center;
 			display: flex;
 			flex-direction: column;
-			font-size: 2rem;
+			font-size: 1.8rem;
 			justify-content: center;
 			padding: 1rem;
 			width: 95%;
@@ -1526,6 +1526,29 @@ header {
 				min-height: 10rem;
 				min-width: 90%;
 				width: 90%;
+			}
+
+			&-checkbox {
+				align-items: start;
+				display: flex;
+				margin-bottom: 2rem;
+
+				.checkbox-box {
+					height: 4rem;
+					width: 4rem;
+					margin-right: 1rem;
+				}
+
+				p {
+					font-size: 1.2rem;
+				}
+			}
+
+			&-alert {
+				color: red;
+				opacity: 0;
+				font-size: 1.4rem;
+				margin-bottom: 1rem;
 			}
 
 			&-btn {
@@ -1973,7 +1996,7 @@ header {
 			}
 
 			.contact-form {
-				background-color: #8cc63e;
+				background-color: rgba(140, 198, 62, 0.4);
 				border-radius: 1rem;
 				padding: 2rem;
 				width: 45%;

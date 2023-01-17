@@ -8,6 +8,11 @@ const offerOptions = document.querySelector('.offer-options');
 const body = document.querySelector('body');
 const logos = document.querySelectorAll('.mark');
 const i = document.querySelector('.offer i');
+const form = document.querySelector('.contact-form');
+const submitButton = document.querySelector('.contact-form-btn');
+const alert = document.querySelector('.contact-form-alert');
+const alertText = document.querySelector('.checkbox-text')
+
 
 let currentLogo = 0;
 
@@ -55,4 +60,61 @@ closeBtn.addEventListener('click', closeMenu);
 offerBtn.addEventListener('click', () => {
 	i.classList.toggle('rotate');
 	offerOptions.classList.toggle('show-options');
+});
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    let isValid = true;
+
+    // Check if all fields are filled in
+    const inputs = form.querySelectorAll('.contact-form-input');
+    inputs.forEach((input) => {
+        if (input.value === '') {
+            input.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+            isValid = false;
+        } else {
+            input.style.backgroundColor = '';
+        }
+    });
+	const emailInput = form.querySelector('#femail');
+    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    if (!emailRegex.test(emailInput.value)) {
+        emailInput.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        isValid = false;
+    } else {
+        emailInput.style.backgroundColor = '';
+    }
+
+	const selectInput = form.querySelector('#fchoice');
+    if (selectInput.value === '0') {
+        selectInput.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        isValid = false;
+    } else {
+        selectInput.style.backgroundColor = '';
+    }
+
+	const textareaInput = form.querySelector('#fmessage');
+    if (textareaInput.value === '') {
+        textareaInput.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        isValid = false;
+    } else {
+        textareaInput.style.backgroundColor = '';
+    }
+
+    // Check if checkbox is checked
+    const checkbox = form.querySelector('.checkbox-box');
+    if (!checkbox.checked) {
+        alertText.style.color = 'red'
+        isValid = false;
+    } else {
+        alertText.style.color = '';
+    }
+
+	console.log(isValid);
+
+	if (!isValid) {
+        alert.style.opacity = '1';
+    } else {
+        alert.style.opacity = '0';
+        form.submit();
+    }
 });
