@@ -190,7 +190,7 @@ header {
 			align-items: center;
 			display: flex;
 			justify-content: space-between;
-			width: 60%;
+			width: 65%;
 
 			.dropdown-menu {
 				background-color: rgb(228, 228, 228);
@@ -222,7 +222,7 @@ header {
 				text-transform: uppercase;
 				text-align: center;
 				transition: color 0.3s;
-				width: 15rem;
+				width: 17rem;
 
 				&::before {
 					content: '';
