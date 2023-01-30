@@ -28,7 +28,7 @@ if (logos.length !== 0) {
 const dropdownMenu = document.createElement('div');
 dropdownMenu.classList.add('dropdown-menu');
 dropdownMenu.innerHTML =
-	'<a href="instalacje-fotowoltaiczne.html">Instalacje fotowoltaiczne</a><a href="pompy-ciepla.html">Pompy ciepła</a><a href="broker-energii.html">Broker energii</a>';
+	'<a href="instalacje-fotowoltaiczne.html">Instalacje fotowoltaiczne</a><a href="pompy-ciepla.html">Pompy ciepła</a><a href="broker-energii.html">Broker energii</a><a href="dystrybucja.html">Dystrybucja</a>';
 dropdown.appendChild(dropdownMenu);
 
 cards.forEach(card => {
@@ -49,6 +49,7 @@ const closeMenu = () => {
 	hiddenMenu.style.transform = 'translateX(100%)';
 	offerOptions.classList.remove('show-options');
 	body.style.overflow = 'auto';
+    i.classList.remove('rotate');
 };
 
 burgerBtn.addEventListener('click', showMenu);
