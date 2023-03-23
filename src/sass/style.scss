@@ -60,13 +60,11 @@ header {
 		}
 
 		.socials {
-			display: flex;
+			height: 5rem;
 
-			i {
-				color: #8cc63e;
-				cursor: pointer;
-				font-size: 2rem;
-				margin: 2.5rem 1rem;
+			img {
+				height: 100%;
+				width: 100%;
 			}
 		}
 	}
@@ -1607,6 +1605,19 @@ header {
 			z-index: 1;
 		}
 	}
+
+	.by-energy {
+		align-items: center;
+		display: flex;
+		font-size: 2rem;
+		justify-content: space-around;
+		padding: 2rem;
+		width: 100%;
+
+		img {
+			width: 15rem;
+		}
+	}
 }
 
 .thanks {
@@ -2296,6 +2307,14 @@ header {
 
 			&-text {
 				font-size: 7rem;
+			}
+		}
+
+		.by-energy {
+			font-size: 4rem;
+
+			img {
+				width: 50rem;
 			}
 		}
 	}
